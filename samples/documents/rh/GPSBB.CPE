@@ -1,0 +1,38 @@
+Tipo Registro  0010010"A"                                                         
+Nome Arquivo   0020070"ART300"                                                    
+Numero do CGC  0080210cCGC                                                        
+Data da Remessa0220290GRAVADATA(dDatRemessa,.F.,8)                                
+Origem Remessa 0300310"PR"                                                        
+Numero Remessa 0320330GetSXENum("SRZ", "RZ_TIPO")                                 
+Prefixo Agencia0340370Left(StrZero(Val(cCodAgencia),5),4)                         
+DV da Agencia  0380380Right(StrZero(Val(cCodAgencia),5),1)                        
+Numero da Conta0390470Left(StrZero(Val(cNumConta),10),9)                          
+DV da Conta    0480480Right(StrZero(Val(cNumConta),10),1)                         
+Ident. DOC     0490500"09"                                                        
+Nome Convenio  0510900Space(40)                                                   
+Filler         0910980Space(8)                                                    
+Numero Convenio0991040"032546"                                                    
+Ctl-Seq-Rem-IED1051130SPACE(9)                                                    
+Filler         1142820SPACE(169)                                                  
+Tipo de Remessa2832870"TESTE"                                                     
+Versao Aplic.  2882950SPACE(8)                                                    
+Sequencial     2963000INCREMENTA()                                                
+Tipo Registro  0010010"S"                                                         
+Dta Vencimento 0020090GRAVADATA(dDatVencto, .F., 8)                               
+Codigo Receita 0100130"0000"                                                      
+Competencia    0140190Right(cCompetencia,4)+Left(cCompetencia,2)                  
+Ident. INSS    0200330fString(cCei,14)                                            
+Valor do INSS  0340500fValor(nValINSS,17)                                         
+Outras Entidad.0510670fValor(nValEntid,17)                                        
+Atual.Monetaria0680840fValor(nValJuros,17)                                        
+Valor Arrec.   0851010fValor(nValINSS+nValEntid+nValJuros,17)                     
+Nome Contr.    1021310fString(cRazao,30)                                          
+Ident. Conta   1321320"1"                                                         
+Ident. Guia    1331570SPACE(25)                                                   
+Ident. DBT     1581820SPACE(25)                                                   
+Filler         1832950SPACE(113)                                                  
+Sequencial     2963000INCREMENTA()                                                
+Tipo Registro  0010010"Z"                                                         
+Qtdade Registro0020070STRZERO(nTotRegArq,6)                                       
+Filler         0082950SPACE(288)                                                  
+Sequencial     2963000INCREMENTA()                                                

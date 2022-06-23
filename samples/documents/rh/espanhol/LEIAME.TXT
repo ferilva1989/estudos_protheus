@@ -1,0 +1,47 @@
+El E-mail recibido contiene 3 archivos comprimidos:
+
+PSAL.TXT - Archivo con los datos de la Encuesta Salarial.
+
+PSAL.ZIP - Archivo comprimido con el PSAL.EXE (ejecutable de la Recolección 
+de Datos) y CTL3D.DLL (DLL necesaria para el funcionamiento del PSAL.EXE).
+
+LEIAME.TXT - Archivo con las instrucciones de instalación y ejecución de la Recolección de Datos.
+
+- Si fuera cliente Microsiga:
+	- Sólo considere el archivo PSAL.TXT y el LEIAME.TXT.
+	- Grabe el archivo PSAL.TXT en el mismo directorio donde se encuentran los ejecutables.
+	- Ejecute la Recolección de Datos por el entorno Cargos y Sueldos (opción 
+	"Misceláneas/Recolección Automatizada/Recolección de Datos).
+	- Inicialmente se mostrará una pantalla descriptiva de la Empresa Patrocinadora 
+	A continuación, un menú de opciones, donde están las informaciones necesarias para la
+	Recolección de Datos de la Encuesta Salarial.
+	- Siendo Cliente Microsiga, la ventaja está en el momento de obtener los datos de 
+	frecuencia y sueldo de los empleados, informando solamente el Cargo correspondiente 
+	al de la Empresa Participante. De esta manera, el sistema recorre todo el archivo
+	de empleados, ubicando automáticamente los datos de frecuencia y sueldo.
+	
+- Si no fuera cliente Microsiga:
+	- Considere los archivos PSAL.TXT, PSAL.ZIP y LEIAME.TXT
+	- Primeramente, seleccione el directorio para el trabajo de la Recolección de Datos.
+	- Grabe el archivo PSAL.TXT y ejecute PSAL.ZIP en este directorio para
+	descomprimir el archivo.
+        - El archivo PSAL.ZIP está compuesto por PSAL.EXE y CTL3D.DLL.
+        - Ejecute PSAL.EXE e inicie la Recolección de Datos de la Encuesta Salarial.
+	- Se mostrará una pantalla descriptiva de la Empresa Patrocinadora de la 
+	Encuesta Salarial, a continuación un Menú donde estarán las informaciones necesarias 
+	para la Recolección de Dados de la Encuesta Salarial.
+	
+- Para ambas situaciones:	
+	- Todas las pantallas tienen un botón de ayuda que acciona el Help On-line del sistema. 
+	Si tuviera alguna duda, acciónelo.
+	- En la Recolección de Datos son imprescindibles dos pasos para la Encuesta Salarial: 
+		- el rellenado de datos de la Empresa Participante 
+		- la Recolección de Datos propiamente dicha.
+		En los datos de la Empresa Participante se solicitan datos de registro,
+		como teléfono, e-mail, nombre del contacto en la empresa, etc. y en la Recolección
+		se solicitan los datos de frecuencia y sueldo del cargo en la empresa 
+		participante, el mes del convenio colectivo, algunos valores de remuneración, etc.
+	- Después de rellenados los datos necesarios y así que la Recolección estuviera finalizada, acceda al 
+	menú y haga clic en la opción "FINALIZAR LA ENCUESTA". 
+	- Se generará un archivo PSAL+9999,TXT, que debe  enviarse a la Empresa Patrocinadora
+	que mantiene todas las informaciones de la Recolección de Datos.
