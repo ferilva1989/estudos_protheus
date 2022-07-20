@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<style>
-		/*Os estilos devem ser colocados nas proprias tags para compatibilidade com diversos webmails*/
-	</style>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Solicitação de Cotação</title>
-	<!--
+		<style>
+			/*Os estilos devem ser colocados nas proprias tags para compatibilidade com diversos webmails*/
+
+		</style>
+
+		<title>Solicitação de Cotação</title>
+		<!--
 		Documentação referência:
 		https://centraldeatendimento.totvs.com/hc/pt-br/articles/360050273653-Cross-Segmentos-Totvs-Backoffice-Protheus-SIGACOM-Gerar-cota%C3%A7%C3%A3o-modelo-para-envio-de-e-mail-em-HTML
 	-->
-</head>
+	</head>
 
-<body style="width: 700px; font: normal normal normal 14px 'open sans', sans-serif;">
+	<body style="width: 700px; font: normal normal normal 14px 'open sans', sans-serif;">
 
-	<h1
-		style="font: normal normal normal 22px 'open sans', sans-serif; color: rgb(0, 136, 203); padding-top: 3px; padding-bottom:3px;">
-		Solicita&ccedil;&atilde;o de Cota&ccedil;&atilde;o %cNumCot%
-	</h1>
+		<h1
+			style="font: normal normal normal 22px 'open sans', sans-serif; color: rgb(0, 136, 203); padding-top: 3px; padding-bottom:3px;">
+			Solicita&ccedil;&atilde;o de Cota&ccedil;&atilde;o %cNumCot%
+		</h1>
 
-	<!-- Cabeçalho do Pedido -->
-	<div style="border-top: solid rgb(0, 136, 203) 2px; padding-top:10px; padding-bottom: 5px; margin-top: 10px;">
-		<table
-			style="font: normal normal normal 14px 'open sans', sans-serif; text-align: left;border-width:0px; width:700px;">
-			<tr>
-				<td style="width:100px;">Fornecedor</td>
-				<td style="width:500px;">%cNomeFor%</td>
-			</tr>
-			<tr>
-				<td style="width:100px;">Emiss&atilde;o </td>
-				<td style="width:500px;">%cDataEmis% </td>
-			</tr>
-			<tr>
-				<td style="width:100px;">CNPJ </td>
-				<td style="width:500px;">%cCNPJFor% </td>
-			</tr>
-			<tr>
-				<td colspan="04">
-					<hr>
-				</td>
-			</tr>
-			<tr>
-				<td style="width:100px;">Cliente </td>
-				<td style="width:500px;">%cNomeCli%</td>
-			</tr>
-			<tr>
-				<td style="width:100px;">CNPJ </td>
-				<td style="width:500px;">%cCNPJCli% </td>
-			</tr>
-			<tr>
-				<td style="width:100px;">Endere&ccedil;o </td>
-				<td colspan="03">%cEndeCli% </td>
-			</tr>
-			<tr>
-				<td style="width:100px;">CEP </td>
-				<td style="width:500px;">%cCepCli% </td>
-			</tr>
-			<tr>
-				<td style="width:100px;">FONE </td>
-				<td style="width:500px;">%cFoneCli% </td>
-			</tr>
-		</table>
-	</div>
-	<!-- Itens do Pedido -->
-	<div style="border-top: solid rgb(0, 136, 203) 2px; padding-top:10px; padding-bottom: 5px; margin-top: 10px;">
-		<h2 style="font: normal normal normal 14px 'open sans', sans-serif;">
-			Solicitamos cota&ccedil;&atilde;o para os seguintes itens.
-			<h2>
-				<table
-					style="font: normal normal normal 14px 'open sans', sans-serif; text-align: left;border-width:0px; width:700px;">
-					<thead
-						style="font: normal normal normal 14px 'open sans', sans-serif; background: Gray; color:	White; text-align: left; border-width: 0px;">
-						<tr>
-							<td style="width:400px;">Descri&ccedil;&atilde;o</td>
-							<td style="width:100px;">Quantidade</td>
-							<td style="width:100px;">Entrega</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td style="width:400px;">%It.cProDesc%</td>
-							<td style="width:100px;">%It.cQuant%</td>
-							<td style="width:100px;">%It.cDtEnt%</td>
-						</tr>
-					</tbody>
-				</table>
-	</div>
+		<!-- Cabeçalho do Pedido -->
+		<div style="border-top: solid rgb(0, 136, 203) 2px; padding-top:10px; padding-bottom: 5px; margin-top: 10px;">
+			<table
+				style="font: normal normal normal 14px 'open sans', sans-serif; text-align: left;border-width:0px; width:700px;">
+				<tr>
+					<td style="width:100px;">Fornecedor</td>
+					<td style="width:500px;">%cNomeFor%</td>
+				</tr>
+				<tr>
+					<td style="width:100px;">Emiss&atilde;o </td>
+					<td style="width:500px;">%cDataEmis% </td>
+				</tr>
+				<tr>
+					<td style="width:100px;">CNPJ </td>
+					<td style="width:500px;">%cCNPJFor% </td>
+				</tr>
+				<tr>
+					<td colspan="04">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:100px;">Cliente </td>
+					<td style="width:500px;">%cNomeCli%</td>
+				</tr>
+				<tr>
+					<td style="width:100px;">CNPJ </td>
+					<td style="width:500px;">%cCNPJCli% </td>
+				</tr>
+				<tr>
+					<td style="width:100px;">Endere&ccedil;o </td>
+					<td colspan="03">%cEndeCli% </td>
+				</tr>
+				<tr>
+					<td style="width:100px;">CEP </td>
+					<td style="width:500px;">%cCepCli% </td>
+				</tr>
+				<tr>
+					<td style="width:100px;">FONE </td>
+					<td style="width:500px;">%cFoneCli% </td>
+				</tr>
+			</table>
+		</div>
+		<!-- Itens do Pedido -->
+		<div style="border-top: solid rgb(0, 136, 203) 2px; padding-top:10px; padding-bottom: 5px; margin-top: 10px;">
+			<h2 style="font: normal normal normal 14px 'open sans', sans-serif;">
+				Solicitamos cota&ccedil;&atilde;o para os seguintes itens.
+				<h2>
+					<table
+						style="font: normal normal normal 14px 'open sans', sans-serif; text-align: left;border-width:0px; width:700px;">
+						<thead
+							style="font: normal normal normal 14px 'open sans', sans-serif; background: Gray; color:	White; text-align: left; border-width: 0px;">
+							<tr>
+								<td style="width:400px;">Descri&ccedil;&atilde;o</td>
+								<td style="width:100px;">Quantidade</td>
+								<td style="width:100px;">Entrega</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="width:400px;">%It.cProDesc%</td>
+								<td style="width:100px;">%It.cQuant%</td>
+								<td style="width:100px;">%It.cDtEnt%</td>
+							</tr>
+						</tbody>
+					</table>
+		</div>
 
-</body>
+	</body>
+
 </html>
